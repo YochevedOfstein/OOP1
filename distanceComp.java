@@ -26,10 +26,10 @@ public class distanceComp implements Comparator<ConcretePiece> {
             }
             else{
                 if((a.getOwner() == winner) && (b.getOwner() != winner)){
-                    return 1;
+                    return -1;
                 }
                 else if((a.getOwner() != winner) && (b.getOwner() == winner)){
-                    return -1;
+                    return 1;
                 }
             }
         }

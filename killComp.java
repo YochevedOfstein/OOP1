@@ -16,10 +16,10 @@ public class killComp implements Comparator<Pawn> {
         }
         else{
             if(a.getID() > b.getID()){
-                return -1;
+                return 1;
             }
             else if(a.getID() < b.getID()){
-                return 1;
+                return -1;
             }
             else{
                 if((a.getOwner() == winner) && (b.getOwner() != winner)){
